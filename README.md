@@ -103,7 +103,9 @@ no limite quanto nas leituras de temperatura.
 numerico..."`, limpou o buffer de entrada e solicitou o valor novamente, sem avançar a
 lógica do monitoramento nem contabilizar a tentativa inválida como uma leitura.
 
-📷 Evidência: `evidencias/teste01.png`
+**Evidência:**
+
+![Teste 1](evidencias/teste01.png)
 
 ### Teste 2 — Temperaturas acima do limite, porém não consecutivas
 
@@ -117,7 +119,9 @@ temperaturas alternando entre valores acima e abaixo do limite (ex.: 32, 28, 35,
 `consecutivasAcima` voltou a zero e o monitoramento continuou normalmente, sem encerrar,
 mesmo havendo várias leituras acima do limite ao longo do teste.
 
-📷 Evidência: `evidencias/teste02.png`
+**Evidência:**
+
+![Teste 2](evidencias/teste02.png)
 
 ### Teste 3 — Três temperaturas consecutivas acima do limite
 
@@ -131,7 +135,9 @@ monitoramento foi encerrado automaticamente e o programa exibiu o relatório fin
 contendo o total de leituras, a média, a maior e a menor temperatura, a quantidade de
 leituras acima do limite, o percentual acima do limite e o motivo do encerramento.
 
-📷 Evidência: `evidencias/teste03.png`
+**Evidência:**
+
+![Teste 3](evidencias/teste03.png)
 
 ## Questão final de reflexão
 
@@ -160,10 +166,11 @@ existe depois da primeira leitura (`while`).
 ## Estrutura do repositório
 
 ```text
-desafio-monitoramento/
+Sensor-de-Temperatura-em-C-/
 │
 ├── monitoramento.c
 ├── README.md
+├── .gitignore
 └── evidencias/
     ├── teste01.png
     ├── teste02.png
